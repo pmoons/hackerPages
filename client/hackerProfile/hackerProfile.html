@@ -7,13 +7,14 @@
 						<h1> {{ currentUser.emails.[0].address }}'s Profile</h1>
 					</div>
 
+          {{ #with hackerProfile }}
 					<div class="form-group">
 						<label for="legal-name" class="control-label col-xs-2">Legal Name
 						</label>
 						<div class="col-xs-8">
 							<input id="legal-name" class="form-control" type="text" value="{{ legalName }}" placeholder="Grace Hopper, Charles Babbage...">
 						</div>
-				
+
 					</div>
 
 					<div class="form-group">
@@ -36,6 +37,7 @@
 							<input id="best-hack" class="form-control" type="text" value="{{ bestHack }}" placeholder="stuxnet, Bob's Discount Furniture,...">
 						</div>
 					</div>
+          {{ /with }}
 
 					<div class="form-group">
 						<div class="col-xs-8 col-xs-offset-2">
@@ -46,7 +48,7 @@
 				</div>
 
 			</div>
-	
+
 		</div>
 
 	</div>

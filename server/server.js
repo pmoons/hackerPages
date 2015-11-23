@@ -1,6 +1,5 @@
-Meteor.publish('hackers', function(){
-	return Hackers.find({ createdBy: this.userId }, 
-		{fields:{legalName: true, pseudonyn: true, email: true, bestHack: true} });
+Meteor.publish('hackers', function () {
+  return Hackers.find({ userId: this.userId});
 });
 
 Hackers.allow({
@@ -12,5 +11,4 @@ Hackers.allow({
 		return true;
 	},
 
-});	
-
+});
