@@ -1,0 +1,24 @@
+<template name="nav">
+	
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+  			<div class="navbar-header nav-info">
+  				<div class="text-center nav-info">
+	  				{{ > loginButtons }}
+
+	  			</div>
+          <div class="text-center nav-info">
+            {{ #if currentUser }}
+              <a class="nav-links" href="{{ pathFor 'index' }}">Home</a>
+              <a class="nav-links" href="{{ pathFor 'hackerProfile' }}">Profile</a>
+            {{ /if }}
+
+          </div>
+
+    		</div>
+
+  		</div>
+
+	</nav>
+
+</template>
