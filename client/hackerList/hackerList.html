@@ -1,0 +1,13 @@
+<template name="hackerList">
+	<div>
+		<ul class="list-group">
+			<li class="list-group-item"><strong>Pseudonym:  Best Hack</strong></li>
+			{{#each hackerData}}
+	  			<li class="list-group-item"> {{ pseudonym }}:  {{ bestHack }} </li>
+			{{/each}}
+
+		</ul>	
+
+	</div>	
+
+</template>

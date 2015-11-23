@@ -1,5 +1,5 @@
 Meteor.publish('hackers', function () {
-  return Hackers.find({ userId: this.userId});
+  return Hackers.find();//{ userId: this.userId});
 });
 
 Hackers.allow({
