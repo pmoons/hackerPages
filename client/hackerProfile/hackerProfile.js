@@ -5,6 +5,7 @@ Template.hackerProfile.helpers({
   hackerProfile: function() {
     let hacker = Hackers.findOne({ "userId": Meteor.userId() });
 
+    // Use binary logical operators (value preserving, & short-circuiting) to set defaults
     let legalName = hacker && hacker.legalName || '';
     let pseudonym = hacker && hacker.pseudonym || '';
     let bestHack = hacker && hacker.bestHack  || '';
