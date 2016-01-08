@@ -22,3 +22,5 @@ email
 accounts-ui
 accounts-password
 iron:router
+sanjo:jasmine
+velocity:html-reporter
