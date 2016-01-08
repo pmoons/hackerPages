@@ -2,9 +2,6 @@ Meteor.subscribe('hackers');
 
 Template.hackerList.helpers({
 
-  hackerData: function() {
-   	return Hackers.find();
-  
-  }
+  hackerData: HackerPages.Services.HackerList.getHackerData
 
 });
